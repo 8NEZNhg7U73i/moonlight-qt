@@ -183,7 +183,7 @@ public:
 
     virtual int getDecoderColorspace() {
         // Rec 601 is default
-        return COLORSPACE_REC_601;
+        return COLORSPACE_REC_709;
     }
 
     virtual int getDecoderColorRange() {
