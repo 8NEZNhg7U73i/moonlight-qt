@@ -188,7 +188,7 @@ public:
 
     virtual int getDecoderColorRange() {
         // Limited is the default
-        return COLOR_RANGE_LIMITED;
+        return COLOR_RANGE_FULL;
     }
 
     virtual int getFrameColorspace(const AVFrame* frame) {
