@@ -1,4 +1,4 @@
-@echo off
+@echo on
 setlocal enableDelayedExpansion
 
 rem Run from Qt command prompt with working directory set to root of repo
@@ -133,7 +133,9 @@ mkdir %INSTALLER_FOLDER%
 mkdir %SYMBOLS_FOLDER%
 
 echo Configuring the project
+echo %QMAKE_CMD%
 pushd %BUILD_FOLDER%
+echo %QMAKE_CMD% %SOURCE_ROOT%\moonlight-qt.pro
 %QMAKE_CMD% %SOURCE_ROOT%\moonlight-qt.pro
 if !ERRORLEVEL! NEQ 0 goto Error
 popd
